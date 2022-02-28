@@ -7,7 +7,6 @@ private:
     int max; //顺序表的最大容量
     int length = 0; //顺序表当前的长度
     int *list; //指向数组的指针
-
 public:
     arrList(int size); //构造函数
     ~arrList(); //析构函数
