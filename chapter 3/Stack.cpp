@@ -20,7 +20,7 @@ Stack::Stack(int size)
 Stack::~Stack()
 {
     delete [] list;
-}
+} 
 
 bool Stack::push(int value)
 {

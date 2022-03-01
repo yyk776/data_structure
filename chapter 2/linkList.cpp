@@ -27,7 +27,8 @@ linkList::~linkList()
     delete(head);
 }
 
-bool linkList::insert(int value){
+bool linkList::insert(int value)
+{
     linkNode* newNode = new linkNode(value);
     linkNode* p = head;
     for(int i = 0; i < length; i++){
@@ -38,7 +39,8 @@ bool linkList::insert(int value){
     return true;
 }
 
-bool linkList::del(int pos){
+bool linkList::del(int pos)
+{
     if(pos < 0 || pos>=length) return false; //判断越界
     linkNode* p = head;
     for(int i = 0; i < pos; i++){
@@ -49,12 +51,14 @@ bool linkList::del(int pos){
     return true;
 }
 
-bool linkList::isEmpty(){
+bool linkList::isEmpty()
+{
     if(head->next == nullptr) return true;
     return false;
 }
 
-int main(){
+int main()
+{
     linkList* l = new linkList();
     l->insert(1);
     l->insert(2);
